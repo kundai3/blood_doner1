@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Requests - BloodLink</title>
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🩸 BloodLink</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+
+    <h1>Create Blood Request</h1>
+
+    <form id="requestForm">
+
+        <input
+            type="text"
+            placeholder="Patient Name"
+            required
+        >
+
+        <select required>
+            <option>O+</option>
+            <option>O-</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+
+        <input
+            type="text"
+            placeholder="Hospital"
+            required
+        >
+
+        <input
+            type="text"
+            placeholder="City"
+            required
+        >
+
+        <select>
+            <option>Normal</option>
+            <option>Urgent</option>
+            <option>Critical</option>
+        </select>
+
+        <button type="submit">
+            Submit Request
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/requests.js"></script>
+
+</body>
+</html>
