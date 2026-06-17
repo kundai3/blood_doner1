@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BloodLink</title>
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🩸 BloodLink</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><a href="requests.html">Requests</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+
+<section class="dashboard">
+
+    <h1>BloodLink Dashboard</h1>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h2 id="totalDonors">0</h2>
+            <p>Total Donors</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="totalRequests">0</h2>
+            <p>Blood Requests</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="livesSaved">0</h2>
+            <p>Lives Saved</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2 id="activeHospitals">0</h2>
+            <p>Partner Hospitals</p>
+        </div>
+
+    </div>
+
+    <div class="recent-requests">
+
+        <h2>Recent Requests</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Patient</th>
+                    <th>Blood</th>
+                    <th>Hospital</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="requestTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
