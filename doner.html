@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Donors - BloodLink</title>
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🩸 BloodLink</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="requests.html">Requests</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+
+<section class="donor-section">
+
+    <h1>Find Blood Donors</h1>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by blood group (O+, A+, B+, etc)"
+        >
+
+        <button onclick="searchDonors()">
+            Search
+        </button>
+
+    </div>
+
+    <div id="donorContainer" class="donor-grid">
+
+    </div>
+
+</section>
+
+<script src="js/donors.js"></script>
+
+</body>
+</html>
